@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script defer src="fontawesome/js/all.js"></script>
-    <title>John Doe</title>
+    <title>Andrew Hearn - Tech HW 3 HomePage</title>
     <style>
         html,
         body {
             height: 100%;
-            font-family: 'Merriweather Sans', sans-serif;
+            font-family: 'Gloucester MT', sans-serif;
             scroll-behavior: smooth;
+            background-color: darkslategrey;
+            color: ghostwhite;
         }
 
         .faded {
@@ -64,6 +66,7 @@
             justify-content: center;
             flex-direction: column;
             align-items: center;
+            color: darkslategrey;
         }
 
         .course h5 {
@@ -75,21 +78,24 @@
         }
 
         .next a {
-            color: rgb(33, 37, 41);
+            color: rgb(79, 162, 171);
         }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#landing">John Doe<span class="sr-only">(current)</span></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="#landing">Andrew Hearn<span class="sr-only">(current)</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto"
+                <li class="nav-item">
+                    <a class="nav-link" href="#interests">Interests</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#projects">Projects</a>
                 </li>
@@ -102,37 +108,20 @@
             </ul>
         </div>
     </nav>
+
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="landing">
         <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Hello, I'm John!</h4>
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Hello, my name is Andrew Hearn!</h4>
         </div>
         <div class="row mx-auto">
             <h5 class="display-5 mx-auto faded text-center">I'm an Information Science & Technology Student at Temple
                 University.</h5>
         </div>
+        
         <div class="row my-4">
-            <div class="col my-3"><img src="images/python.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Python" /></div>
-            <div class="col my-3"><img src="images/angular.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Angular" /></div>
-            <div class="col my-3"><img src="images/typescript.jpg" class="lang" data-toggle="tooltip"
-                    data-placement="top" title="TypeScript" /></div>
-
-            <div class="col my-3"><img src="images/csharp.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="C#" /></div>
-            <div class="col my-3"><img src="images/node.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Node.js" /></div>
-            <div class="col my-3"><img src="images/java.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Java" /></div>
-
-            <div class="col my-3"><img src="images/aspnet.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="ASP.NET" /></div>           
-                     <div class="col my-3"><img src="images/mssql.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Microsoft SQL Server" /></div> <div class="col my-3"><img src="images/mongodb.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="MongoDB" /></div>
-
-        </div>
-        <div class="row my-4">
+            <div class="col">
+                <a href="#interests"><button type="button" class="btn btn-outline">Interests</button></a>
+            </div>
             <div class="col">
                 <a href="#projects"><button type="button" class="btn btn-outline">Projects</button></a>
             </div>
@@ -143,101 +132,140 @@
                 <a href="#contact"><button type="button" class="btn btn-outline">Contact</button></a>
             </div>
         </div>
-        <div class="row mt-5 next">
-            <a href="#projects" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                    title="Projects"></i></a> </div>
+    <div class="row mt-5 next">
+        <a href="#interests" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top" title="Interests"></i></a> </div>
+    </div>
 
+    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="interests">
+        <div class="row mx-auto">
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Interests</h4>
+        </div>
+        <!-- Implementation of cards in card group-->
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top" src="images/fencing.jpg" alt="Fencing Image" style=" width: 375px; height:250px">
+                <div class="card-body" style="background-color: #e3f2fd; color: darkslategrey">
+                    <h5 class="card-title">Fencing</h5>
+                    <p class="card-text">
+                        One hobby of mine that generally gets a unique response is that I enjoy fencing as a past time hobby.
+                        In particular I began at Temple University in our Fencing Club based on a whim.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="images/vidya.jpg" alt="Video Games Image" style=" width: 375px; height:250px">
+                <div class="card-body" style="background-color: #e3f2fd; color: darkslategrey;">
+                    <h5 class="card-title">Video Games</h5>
+                    <p class="card-text">
+                        One more usual hobby I do is that of video games, whether it be with friends in multiplayer or alone singleplayer playthroughs.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="images/movies.jpg" alt="Movie Image" style=" width: 375px; height:250px">
+                <div class="card-body" style="background-color: #e3f2fd; color: darkslategrey;">
+                    <h5 class="card-title">Movies</h5>
+                    <p class="card-text">
+                        Another hobby of mine, hence my Individual Project's Mobile Application Topic, is that of movies. When I really enjoy a movie, my friends know because I won't shut up about it.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 next">
+            <a href="#projects" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top" title="Projects"></i></a>
+        </div>
     </div>
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="projects">
         <div class="row mx-auto">
             <h4 class="display-4 font-weight-bold mx-auto text-center">Projects</h4>
         </div>
         <div class="row mx-auto">
-            <h5 class="display-5 mx-auto faded text-center mb-4">I've worked on some neat things.</h5>
+            <h5 class="display-5 mx-auto faded text-center mb-4">Some of my personal favorite projects I have worked on so far can be found below.</h5>
         </div>
         <div class="row w-100">
-            <h5>Inspiro for Esperanza</h5>
+            <h5>Capstone Project - Humanity Gift Registration</h5>
         </div>
         <div class="row w-100 mb-4">
-            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus nisi
-                in neque blandit auctor. Vestibulum pellentesque fringilla nulla quis sagittis. Donec id erat
-                sodales, fringilla est non, vestibulum tellus. Suspendisse potenti. Fusce et dolor blandit,
-                tincidunt eros non, pharetra orci. Donec massa neque, suscipit at purus ac, cursus tincidunt
-                purus. Suspendisse imperdiet massa nec sem dictum luctus. Vestibulum at porta lectus, sed
-                faucibus libero. </p>
+            <p class="text-justify"> As of right now, I'm glad to have gotten what I consider to be the most interesting topic out of the 4 for a capstone project.
+            Currently we are working with the Lewis Katz School Of Medicine to, in summary, to eliminate teh heavy amount of paperwork in their use of a Database that holds and records 
+            cadaver information for the Humanity Gift Registration</p>
         </div>
         <div class="row w-100">
-            <h5>Work From Home Pinterest</h5>
+            <h5>Capstone Individual Project</h5>
         </div>
         <div class="row w-100 mb-4">
-            <p class="text-justify">Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non ex dapibus
-                finibus. Nulla facilisi. Integer eu libero lorem. Pellentesque eget pretium ligula. Donec finibus nibh
-                sed leo dapibus imperdiet. Fusce cursus eu mi sed porttitor. Aliquam eget suscipit dolor, ac mollis
-                risus. Vestibulum commodo turpis nulla, bibendum varius urna dictum porta. </p>
+            <p class="text-justify"> As for my Individual Project in class, I have chosen to create a Movie Recommender application, akin to that of <a href="https://myanimelist.net/">MyAnimeList</a>,
+            wherein usres create lists of movies they enjoy on some criteria, and receive recommended films based on various criteria within the list. Additionally, I'd like users to be able to create, moderate,
+            and participate in their own forum discussion posts.</p>
         </div>
         <div class="row w-100">
-            <h5>Query Dating Site</h5>
+            <h5>CIS3344 Tutorial Project</h5>
         </div>
         <div class="row w-100">
-            <p class="text-justify">Fusce egestas lectus ac est porttitor congue. Mauris lacinia pharetra odio ut
-                egestas. Nullam facilisis condimentum consequat. Integer arcu nibh, ullamcorper non fringilla quis,
-                tempus sit amet turpis. Proin ac gravida mi. Ut eros quam, pharetra venenatis pharetra at, porttitor sit
-                amet dolor. Ut et accumsan metus. Phasellus eros diam, tristique a maximus vel, fringilla eu nisl.
-                Pellentesque sed quam non urna dapibus porta in in nibh. Phasellus lobortis nibh est, id pretium orci
-                efficitur at. </p>
+            <p class="text-justify">
+                In this project, my partner and I created a Book Review database in which we utilized the Bulma CSS framework, specifically in the form of
+                <a href="http://cis-iis2.temple.edu/Fall2020/CIS3344_tuh30490/Tutorial%20Project/book-reviewer.html">modals and cards to input and display the information</a>
+                and a Web API in conjunction with a Database.
+            </p>
         </div>
-        <div class="row mt-5 next">
-            <a href="#courses" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                    title="Courses"></i></a> </div>
+       <div class="row mt-5 next">
+        <a href="#courses" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top" title="Courses"></i></a> </div>
     </div>
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="courses">
         <div class="row mx-auto">
             <h4 class="display-4 font-weight-bold mx-auto text-center">Courses</h4>
         </div>
-        <div class="row mx-auto mb-4">
-            <h5 class="display-5 mx-auto faded text-center">Not as tasty as a main course, but close.</h5>
-        </div>
+        <!-- Implementation of button popovers-->
         <div class="row w-100 justify-content-center my-3">
             <div class="col text-center course">
-                <h5>Information Systems Analysis and Design</h5>
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="So far this class is really interesting, I really enjoy working within a team for a client">
+                    Information Systems Analysis and Design
+                </button>
             </div>
             <div class="col text-center course">
-                <h5>Server-Side Web Application Development</h5>
-            </div>
-        </div>
-        <div class="row w-100 justify-content-center my-3">
-            <div class="col text-center course">
-                <h5>Network Architectures</h5>
-            </div>
-            <div class="col text-center course">
-                <h5>Client-Side Scripting</h5>
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="As always, Pascucci is a bit difficult but manageable, I love the agency he gives us in assignments though.">
+                    Server-Side Web Application Development
+                </button>
             </div>
         </div>
         <div class="row w-100 justify-content-center my-3">
             <div class="col text-center course">
-                <h5>Component-Based Software Design</h5>
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="This class was a bit boring at times, but I understand the point of it.">
+                    Network Architectures
+                </button>
             </div>
             <div class="col text-center course">
-                <h5>Database Management Systems</h5>
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="I really liked this class, the projects were really fun and entertaining.">
+                    Client-Side Scripting
+                </button>
+            </div>
+        </div>
+        <div class="row w-100 justify-content-center my-3">
+            <div class="col text-center course">
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="This class was a bit annoying at times, and admitttedly I found windows forms to be a bit dated, but again I understand why we were taught it.">
+                    Component-Based Software Design
+                </button>
+            </div>
+            <div class="col text-center course">
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Very tedious class, but the final project and the people I worked with made it very enjoyable.">
+                    Database Management Systems
+                </button>
             </div>
         </div>
         <div class="row mt-5 next">
             <a href="#contact" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
                     title="Contact"></i></a> </div>
-    </div>
+    
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="contact">
         <div class="row mx-auto">
             <h4 class="display-4 font-weight-bold mx-auto text-center">Feel Like Reaching Out?</h4>
         </div>
-        <div class="row mx-auto">
-            <h5 class="display-5 mx-auto faded text-center">I don't bite.</h5>
-        </div>
         <div class="row my-4 contacticon">
-            <a href="mailto:johndoe@gmail.com" class="col mx-3"><i class="fas fa-envelope-square"
+            <a href="mailto:tuh30490@temple.edu" class="col mx-3"><i class="fas fa-envelope-square"
                     data-toggle="tooltip" data-placement="top" title="Email"></i></a>
-            <a href="https://www.linkedin.com/in/johndoe/" class="col mx-3"><i class="fab fa-linkedin"
-                    data-toggle="tooltip" data-placement="top" title="LinkedIn"></i></a>
-            <a href="https://github.com/johndoe" class="col mx-3"><i class="fab fa-github-square"
+            
+            <a href="https://github.com/a-hearn" class="col mx-3"><i class="fab fa-github-square"
                     data-toggle="tooltip" data-placement="top" title="Github"></i></a>
 
         </div>
@@ -259,6 +287,7 @@
     <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
+            $("[data-toggle=popover]").popover();
         })
     </script>
 </body>
